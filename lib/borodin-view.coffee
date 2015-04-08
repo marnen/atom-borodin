@@ -1,5 +1,5 @@
 module.exports =
-class AtomBorodinView
+class BorodinView
   constructor: (serializedState) ->
     # Create root element
     @element = document.createElement('div')
@@ -7,7 +7,7 @@ class AtomBorodinView
 
     # Create message element
     message = document.createElement('div')
-    message.textContent = "The AtomBorodin package is Alive! It's ALIVE!"
+    message.textContent = "The Borodin package is Alive! It's ALIVE!"
     message.classList.add('message')
     @element.appendChild(message)
 

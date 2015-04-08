@@ -1,14 +1,14 @@
-AtomBorodinView = require './atom-borodin-view'
+BorodinView = require './atom-borodin-view'
 {CompositeDisposable} = require 'atom'
 
-module.exports = AtomBorodin =
-  atomBorodinView: null
+module.exports = Borodin =
+  borodinView: null
   modalPanel: null
   subscriptions: null
 
   activate: (state) ->
-    @atomBorodinView = new AtomBorodinView(state.atomBorodinViewState)
-    @modalPanel = atom.workspace.addModalPanel(item: @atomBorodinView.getElement(), visible: false)
+    @borodinView = new BorodinView(state.borodinViewState)
+    @modalPanel = atom.workspace.addModalPanel(item: @borodinView.getElement(), visible: false)
 
     # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
@@ -19,13 +19,13 @@ module.exports = AtomBorodin =
   deactivate: ->
     @modalPanel.destroy()
     @subscriptions.dispose()
-    @atomBorodinView.destroy()
+    @borodinView.destroy()
 
   serialize: ->
-    atomBorodinViewState: @atomBorodinView.serialize()
+    borodinViewState: @borodinView.serialize()
 
   toggle: ->
-    console.log 'AtomBorodin was toggled!'
+    console.log 'Borodin was toggled!'
 
     if @modalPanel.isVisible()
       @modalPanel.hide()
