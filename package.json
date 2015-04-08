@@ -1,12 +1,12 @@
 {
   "name": "atom-borodin",
   "main": "./lib/atom-borodin",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.0.1",
+  "description": "LilyPond build system for Atom",
   "activationCommands": {
     "atom-workspace": "atom-borodin:toggle"
   },
-  "repository": "https://github.com/atom/atom-borodin",
+  "repository": "https://github.com/marnen/atom-borodin",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
