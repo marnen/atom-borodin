@@ -6,7 +6,7 @@
   "activationCommands": {
     "atom-workspace": "borodin:toggle"
   },
-  "repository": "https://github.com/marnen/atom-borodin",
+  "repository": "https://github.com/marnen/borodin",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
