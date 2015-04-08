@@ -1,4 +1,4 @@
-BorodinView = require './atom-borodin-view'
+BorodinView = require './borodin-view'
 {CompositeDisposable} = require 'atom'
 
 module.exports = Borodin =
@@ -14,7 +14,7 @@ module.exports = Borodin =
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-borodin:toggle': => @toggle()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'borodin:toggle': => @toggle()
 
   deactivate: ->
     @modalPanel.destroy()

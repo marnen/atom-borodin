@@ -2,19 +2,19 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle atom-borodin'
-      'command': 'atom-borodin:toggle'
+      'label': 'Toggle borodin'
+      'command': 'borodin:toggle'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'atom-borodin'
+      'label': 'borodin'
       'submenu': [
         {
           'label': 'Toggle'
-          'command': 'atom-borodin:toggle'
+          'command': 'borodin:toggle'
         }
       ]
     ]

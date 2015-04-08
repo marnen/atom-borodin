@@ -1,4 +1,4 @@
-# atom-borodin package
+# borodin package
 
 A short description of your package.
 

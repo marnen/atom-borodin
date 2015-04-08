@@ -3,7 +3,7 @@ class BorodinView
   constructor: (serializedState) ->
     # Create root element
     @element = document.createElement('div')
-    @element.classList.add('atom-borodin')
+    @element.classList.add('borodin')
 
     # Create message element
     message = document.createElement('div')
