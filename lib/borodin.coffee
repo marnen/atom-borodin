@@ -16,6 +16,9 @@ module.exports = Borodin =
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace', 'borodin:toggle': => @toggle()
 
+    require('atom-package-deps').install('borodin').then =>
+      console.log 'Loaded dependencies for Borodin'
+
   deactivate: ->
     @modalPanel.destroy()
     @subscriptions.dispose()
